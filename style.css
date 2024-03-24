@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Noto+Color+Emoji&display=swap");
+
+body {
+  font-family: "Itim", cursive;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  background: #007d75;
+  justify-content: center;
+  position: relative;
+}
+nav img {
+  height: 70px;
+  display: block;
+  margin: 10px;
+}
+section {
+  padding: 25px 15px;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+h3{
+  font-size: 32px;
+}
+.desc {
+  background-color: #002715;
+  text-align: justify;
+  max-width: unset;
+}
+.desc p{
+  max-width: 1200px;
+  margin: auto;
+}
+.cards {
+  display: flex;
+  gap: 25px;
+  overflow: auto;
+  width: 100%;
+}
+.card {
+  width: 200px;
+  min-width: 150px;
+  aspect-ratio: 1/1.25;
+  display: grid;
+  position: relative;
+  place-items: center;
+  padding: 25px 10px;
+  border-radius: 15px;
+  background: linear-gradient(121deg, #28007e -56.91%, #004c56 60.8%);
+  box-shadow: 0px 0px 4px 3px rgba(0, 44, 96, 0.62);
+  text-wrap: balance;
+  text-align: center;
+  grid-template-rows: auto 1fr;
+  margin: 15px 0;
+}
+.card span {
+  position: absolute;
+  font-size: 150px;
+  transform: translateY(10px);
+  opacity: 0.2;
+  color: aliceblue;
+}
+.card h4 {
+  margin-block: 5px;
+  font-size: 20px;
+}
+.card *:not(span) {
+  z-index: 1;
+}
+
+.tool h3{
+  position: relative;
+  width: fit-content;
+}
+.tool h3::before, .tool h3::after{
+  content: '';
+  width: 100%;
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  height: 2px;
+  rotate: 1deg;
+  background-color: aliceblue;
+}
+
+.tool h3::after{
+  top: calc(100% + 11px);
+  left: 5px;
+  rotate: 0deg;
+}
+
+.file-wrapper {
+  display: grid;
+  place-items: center;
+  position: relative;
+  padding: 50px;
+  font-family: "Itim";
+}
+
+#file-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  font-family: "Itim";
+  cursor: pointer;
+}
+
+.file-wrapper:has(#file-input:hover) #file-input-label{
+  background-color: #055688;
+}
+
+#file-input-label {
+  background: #B2C3FF;
+  color: white;
+  padding: 50px;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  position: relative;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 0.25ch;
+  cursor: pointer;
+  transition: 0.3s;
+  align-items: center;
+  justify-content: center;
+}
+
+.op-wrapper{
+  width: 100%;
+  overflow: auto;
+}
+#output {
+  width: max-content;
+  font-family: "Noto Color Emoji", sans-serif;
+  margin-block: 10px;
+}
+
+footer{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #004c56;
+}
+a{
+  color: aquamarine;
+}
+
+a:hover{
+  color: white;
+}

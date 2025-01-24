@@ -152,7 +152,7 @@ async function generatePalette(image) {
       window.scrollTo(0, document.body.scrollHeight);
     };
   };
-  
+
   return;
 }
 

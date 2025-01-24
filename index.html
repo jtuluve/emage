@@ -1,80 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="fire.ico" type="image/x-icon" />
+    <title>Emage</title>
+    <meta name="description" content="An online image to emoji converter" />
+    <meta
+      name="google-site-verification"
+      content="ryu8eMmsqOd_AMcPtWUS7sYgVtMiYlCMnjH031m4PI4"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="fire.ico" type="image/x-icon">
-  <title>Emage</title>
-  <meta name="description" content="An online image to emoji converter">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <nav><img src="logo.png" alt="logo" /></nav>
-  <main>
-    <section class="desc">
-      <p>
-        An online image to emoji converter tool. Just drop your image below and get it in emoji.
-        <br><strong>NOTE</strong>: The output will be
-        low quality since emojis are very much bigger than pixels. For better experience upload image with low quality.
-        (In terms of pixels). Everything depends on your memory, so don't upload heavy images.💀
-      </p>
-    </section>
-    <section class="why">
-      <h3>Why?</h3>
-      <div class="cards">
-        <div class="card">
-          <span class="material-symbols-outlined">
-            shield_lock
-          </span>
-          <h4>Secure</h4>
-          <p>The uploaded file will never leave your system.</p>
+  <body>
+    <nav><img src="logo.png" alt="logo" /></nav>
+    <main>
+      <section class="desc">
+        <p>
+          An online image to emoji converter tool. Just drop your image below
+          and get it in emoji.
+          <br /><strong>NOTE</strong>: The output will be low quality since
+          emojis are very much bigger than pixels. For better experience upload
+          image with low quality. (In terms of pixels). Everything depends on
+          your memory, so don't upload heavy images.💀
+        </p>
+      </section>
+      <section class="why">
+        <h3>Why?</h3>
+        <div class="cards">
+          <div class="card">
+            <span class="material-symbols-outlined"> shield_lock </span>
+            <h4>Secure</h4>
+            <p>The uploaded file will never leave your system.</p>
+          </div>
+          <div class="card">
+            <span class="material-symbols-outlined"> bolt </span>
+            <h4>Fast</h4>
+            <p>IT'S REALLY FAST AF..!⚡ (kidding💀)</p>
+          </div>
+          <div class="card">
+            <span class="material-symbols-outlined"> family_star </span>
+            <h4>Fun</h4>
+            <p>It's fun to convert image to emoji. (Right?😭)</p>
+          </div>
+          <div class="card">
+            <span class="material-symbols-outlined"> work_alert </span>
+            <h4>Jobless</h4>
+            <p>
+              I mean, you are jobless. 💀<br />
+              So why not just try some random stuff online?
+            </p>
+          </div>
         </div>
-        <div class="card">
-          <span class="material-symbols-outlined">
-            bolt
-          </span>
-          <h4>Fast</h4>
-          <p>IT'S REALLY FAST AF..!⚡ (kidding💀)</p>
+      </section>
+      <section class="tool">
+        <h3>Try it out</h3>
+        <div class="file-wrapper">
+          <label id="file-input-label" for="file-input"
+            ><span class="material-symbols-outlined"> upload </span>Select or
+            drop an Image here..</label
+          >
+          <input type="file" name="file" id="file-input" accept="image/*" />
         </div>
-        <div class="card">
-          <span class="material-symbols-outlined">
-            family_star
-          </span>
-          <h4>Fun</h4>
-          <p>It's fun to convert image to emoji. (Right?😭)</p>
+        <div class="op-wrapper">
+          <h4>Output👇</h4>
+          <div id="output">Upload something first you dumb [ ]...🤷‍♂️</div>
         </div>
-        <div class="card">
-          <span class="material-symbols-outlined">
-            work_alert
-          </span>
-          <h4>Jobless</h4>
-          <p>
-            I mean, you are jobless. 💀<br> So why not just try some random stuff online?
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="tool">
-      <h3>Try it out</h3>
-      <div class="file-wrapper">
-        <label id="file-input-label" for="file-input"><span class="material-symbols-outlined">
-            upload
-          </span>Select or drop an Image here..</label>
-        <input type="file" name="file" id="file-input" accept="image/*">
-      </div>
-      <div class="op-wrapper">
-        <h4>Output👇</h4>
-        <div id="output">Upload something first you dumb [ ]...🤷‍♂️</div>
-      </div>
-    </section>
-  </main>
-  <footer>Developed by&nbsp;<a href="https://github.com/jtuluve">j.tuluve</a>💫&nbsp;|&nbsp;View on&nbsp;<a
-      href="https://github.com/jtuluve/emage">github</a>🤓</footer>
-  <script src="script.js"></script>
-</body>
-
+      </section>
+    </main>
+    <footer>
+      Developed by&nbsp;<a href="https://github.com/jtuluve">j.tuluve</a
+      >💫&nbsp;|&nbsp;View on&nbsp;<a href="https://github.com/jtuluve/emage"
+        >github</a
+      >🤓
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
